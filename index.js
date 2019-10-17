@@ -25,7 +25,7 @@ document.querySelector('.search').addEventListener('click', async e => {
     method: 'GET',
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `${bearerToken}`
+      "Authorization": `${accessToken}`
     }
   });
   const json = await response.json();
